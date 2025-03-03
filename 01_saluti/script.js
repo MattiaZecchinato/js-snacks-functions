@@ -4,21 +4,21 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 // function
-function greeting(userNameFunc) {
+function greetingFunc(userNameFunc) {
 
     return `Hi ${userNameFunc}`;
 }
 
 // arrow function
-const greetingArrow = (userNameArr) => `Hi ${userNameArr}`;
+const greetingArr = (userNameArr) => `Hi ${userNameArr}`;
 
 
 // Invoca la funzione qui e stampa il risultato in console
 // print result with function
-console.log(greeting(userName));
+console.log(greetingFunc(userName));
 
 // print result with arrow function
-console.log(greetingArrow(userName));
+console.log(greetingArr(userName));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
