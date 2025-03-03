@@ -4,10 +4,26 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function letterFindNames(arrayNameFunc, letterFunc) {
 
+    const arrayNameSearch = [];
+    let temp = '';
+
+    for (let i = 0; i < arrayNameFunc.length; i++) {
+
+        temp = arrayNameFunc[i];
+
+        if (temp[0] === letterFunc) {
+
+            arrayNameSearch.push(temp);
+        }
+    }
+
+    return arrayNameSearch;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(letterFindNames(names, 'A'));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
